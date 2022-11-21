@@ -9,8 +9,8 @@ export const Anchors = () => {
             <ul className={style.anchorList}>
                 {
                     anchorData.map(el => {
-                       return <li key={el.id} className={style.anchorList}>
-                            <a href={el.url}>{el.title}</a>
+                       return <li key={el.id}>
+                            <a className={style.anchorLinks} href={el.url}>{el.title}</a>
                         </li>
                     })
                 }
